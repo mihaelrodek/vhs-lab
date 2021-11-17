@@ -46,6 +46,7 @@ public class UserController {
         }
     }
 
+
     @PostMapping("/login")
     public ResponseEntity<?> loginUser(@RequestBody LoginUserRequest loginUserRequest) throws ValidationException {
         String jwt = userService.login(loginUserRequest);
